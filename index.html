@@ -1,12 +1,49 @@
+git 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta.25/shoelace.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <script src="moment.min.js"></script>
+  <script src="script.js" defer></script> <!--make sure to differ-->
+  <link rel="stylesheet" href="style.css">
+  
   <title>Notes</title>
 </head>
+
 <body>
-  
+  <div>
+    <main class="mar-md"> <!--equal margin all around wrapper-->
+<h1>Notes</h1>
+
+<!--to connect label with input use the attribute for-->
+<form id="note-form" class="form">
+  <label for="note-text">Add a New Note </label><!--use the id of input on label for-->
+  <input type="text" id="note-text">
+  <div class="mar-t-md">
+    <button type="submit">Add New Note</button> <!--to call an event submit-->
+  </div>
+
+</form>
+
+<section id="notes">
+  <ul>
+    <li data-id="1"li>
+      <span id= "delete" class= "fa fa-trash mar-1-xs"></span>
+    <li data-id ="2"></li>
+    <li data-id ="3"></li>
+    <li data-id ="4"></li>
+    <li data-id ="5"></li>
+    <li data-id ="6"></li>
+  </ul>
+</section>
+</main>
 </body>
 </html>
+
